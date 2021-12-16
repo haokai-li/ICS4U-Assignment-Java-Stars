@@ -73,12 +73,7 @@ final class Stars {
         try {
             final int nOfStars = userInput.nextInt();
             System.out.println();
-            if (nOfStars > 0) {
-                // process
-                calculate(nOfStars);
-            } else {
-                System.out.println("\nPlease enter a positive integer");
-            }
+            calculate(nOfStars);
         } catch (java.util.InputMismatchException errorCode) {
             System.err.print("\nThis is not an integer");
         }
